@@ -14,6 +14,12 @@ pipeline {
     sh 'mvn package'
    }
   }
+  
+  stage ('create docker image') {
+   steps {
+    sh 'sudo docker build -t devopsxprts/addressbook:20210928.$BUILD_NUMBER .'
+   }
+  }
   stage ('upload image to docker registry') {
    steps {
      sh '''
@@ -22,11 +28,5 @@ pipeline {
         '''
    }   
   }
-  stage ('create docker image') {
-   steps {
-    sh 'sudo docker build -t devopsxprts/addressbook:20210928.$BUILD_NUMBER .'
-   }
-  }
-  
  }
 }
