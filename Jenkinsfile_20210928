@@ -28,5 +28,10 @@ pipeline {
         '''
    }   
   }
+  stage ('update kubernetes deployment') {
+   steps {
+    sh 'kubectl set image deployment addressbook container=devopsxprts/addressbook:20210928.$BUILD_NUMBER --record'
+   }
+  }
  }
 }
