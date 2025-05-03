@@ -21,3 +21,4 @@ root.render(</App>) it is geetting appended to html
 index.js -> app.js -> child.js
 WE need to export the component and import it somewhere
 when we export something in a compnenet and receive in other component we use {} to receive but if we are using default in componenet while export then importting we don't need {}
+otherwise it will throw error
