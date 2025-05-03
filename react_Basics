@@ -1,0 +1,19 @@
+//In react
+///there is major patach minor
+//major breaking change minor is small feature patch tiny bug fix
+//dev dependencies what is it?
+//js bundle where do you get it? (html file user gets when user visit website if we want to do dom manipulation we want to put the js file or css file in that where does it go app.js or your component
+//do we add on1 js or multiple js all the js file or put in the file that will serve to the user it is known as bundling. 
+
+In bundling all the package in one file that file will be add to the html file dependency file like babel they will not be bundle file together (in bundle.js they will not be added) .
+runtime deve depenceny doesn't have to present to the system. the end user doesn't know or js doesn't know the dependency require in background.
+webpack does the bundling file into one js file it will be appended into html file (Dev dpency required in background for app to run)
+//WEBPACk is a bundler whose job is to bundles these files js and css that we define into one js that will be appended to index.html.(png,js,css different into one js,one css, one png etc)
+
+As webpack combines to one file the dpencden that will add hence we should be careful while adding and not add package which will not be used. and use in optimized way(for low latency)
+
+//Mobile applicationi created by react native
+//For the web appliation it is react DOM
+
+in index.js
+there is root in which we pass the App component which is starting part
