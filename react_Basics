@@ -17,3 +17,5 @@ As webpack combines to one file the dpencden that will add hence we should be ca
 
 in index.js
 there is root in which we pass the App component which is starting part
+root.render(</App>) it is geetting appended to html 
+index.js -> app.js -> child.js
